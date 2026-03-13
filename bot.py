@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 
-TOKEN = "TOKEN = "BURAYA_TOKEN_YAZ"
+TOKEN = "BURAYA_TOKEN_YAZ"
 
 # JSON yükleme
 with open("data.json", "r", encoding="utf-8") as f:
