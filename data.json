@@ -157,7 +157,7 @@
   },
         "bedrock": {
     "name": "Bedrock",
-    "type": "Item",
+    "type": "Block",
     "description": "Dünyanin en altinda olur ve hic bir sekilde kirilamaz",
     "usage": "Yapilamaz ve kullanilamaz."
   }
