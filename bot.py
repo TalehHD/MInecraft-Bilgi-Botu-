@@ -2,11 +2,11 @@ import json
 import random
 from turtle import update
 from urllib import response
-from telegram import Update
+from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
 
-TOKEN = "BURAYA_TOKEN_YAZ"
+TOKEN = "tokeni bura yaz"
 
 # JSON yükleme
 with open("data.json", "r", encoding="utf-8") as f:
@@ -18,11 +18,20 @@ with open("data.json", "r", encoding="utf-8") as f:
 
 # START
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    # Klavye butonlarını hazırlıyoruz
+    keyboard = [
+        [KeyboardButton("👾 Moblar"), KeyboardButton("📦 Itemler")],
+        [KeyboardButton("🧱 Bloklar"), KeyboardButton("🎲 Rastgele")],
+        [KeyboardButton("❓ Yardım"), KeyboardButton("📋 Liste")]
+    ]
+    
+    # resize_keyboard=True butonları telefon ekranına göre küçültür
+    reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+
     await update.message.reply_text(
-        "Merhaba!\n"
-        "Ben Minecraft Bilgi Botuyum.\n\n"
-        "Bir Minecraft nesnesi yaz ve sana bilgi vereyim.\n"
-        "Örnek: Creeper, Diamond"
+        "Merhaba! Minecraft Bilgi Botuna Hoş Geldin.\n\n"
+        "Aşağidaki menüyü kullanarak hizlica arama yapabilirsin:",
+        reply_markup=reply_markup
     )
 
 
@@ -98,21 +107,36 @@ Kullanim: {data['usage']}
     await update.message.reply_text(text)
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    text = update.message.text.lower()
+    text = update.message.text
 
-    if text in minecraft_data:
-        data = minecraft_data[text]
+    # --- BUTON KONTROLLERİ ---
+    if text == "👾 Moblar":
+        await list_mobs(update, context)
+        return
+    elif text == "📦 Itemler":
+        await list_items_type(update, context)
+        return
+    elif text == "🧱 Bloklar":
+        await list_blocks(update, context)
+        return
+    elif text == "🎲 Rastgele":
+        await random_item(update, context)
+        return
+    elif text == "❓ Yardım":
+        await help_command(update, context)
+        return
+    elif text == "📋 Liste":
+        await list_items(update, context)
+        return
 
-        reply = f"""
-İsim: {data['name']}
-Tür: {data['type']}
-Açiklama: {data['description']}
-Kullanim: {data['usage']}
-"""
+    # --- NORMAL ARAMA (Creeper vb.) ---
+    text_lower = text.lower()
+    if text_lower in minecraft_data:
+        data = minecraft_data[text_lower]
+        reply = f"İsim: {data['name']}\nTür: {data['type']}\nAçiklama: {data['description']}\nKullanim: {data['usage']}"
         await update.message.reply_text(reply)
-
-    else:
-        await update.message.reply_text("Bu nesneyi bulamadım.") 
+    elif not text.startswith('/'):
+        await update.message.reply_text("Bu nesneyi bulamadim.")
 
 
 # BOT BAŞLATMA
