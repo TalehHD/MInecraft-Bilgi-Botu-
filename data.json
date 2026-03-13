@@ -154,6 +154,12 @@
     "type": "Item",
     "description": "Minecraft'in en değerli eşyasdir.Sadece En City'de ki gemilerde bulunur",
     "usage": "Havayi Fişek kullanarak Elytra ile istediginiz gibi uça bilirsiniz."
+  },
+        "bedrock": {
+    "name": "Bedrock",
+    "type": "Item",
+    "description": "Dünyanin en altinda olur ve hic bir sekilde kirilamaz",
+    "usage": "Yapilamaz ve kullanilamaz."
   }
       
 }
