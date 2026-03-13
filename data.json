@@ -1,0 +1,159 @@
+{
+  "creeper": {
+    "name": "Creeper",
+    "type": "Mob",
+    "description": "Sessizce yaklaşan ve patlayan düşman mob.Oyuncuya yaklaşinca patlar",
+    "usage":"empty"
+  },
+  "zombie": {
+    "name": "Zombie",
+    "type": "Mob",
+    "description": "Gece ortaya çikan düşman mob.Oyuncuya saldirir",
+    "usage":"empty"
+  },
+  "diamond": {
+    "name": "Diamond",
+    "type": "Item",
+    "description": "Minecraft'in en değerli kaynaklarindan biri.",
+    "usage": "Zirh, kiliç ve zirh ve bir çok şeyyapmak için kullanilir."
+  },
+  "obsidian": {
+    "name": "Obsidian",
+    "type": "Block",
+    "description": "Lav ve su birleşince oluşan çok dayanikli blok.",
+    "usage": "Nether portal yapmak için kullanilir."
+  },
+  "villager": {
+    "name": "Villager",
+    "type": "Mob",
+    "description": "Koylerde olur ve ticaret yaparlar",
+    "usage":"Ticaret icin kullanilir"
+  },
+  "skeleton": {
+    "name": "Iskelet",
+    "type": "Mob",
+    "description": "Gece ortaya çikan düşman mob.Oyuncuya saldirir",
+    "usage":"empty"
+  },
+  "enderman": {
+    "name": "Enderman",
+    "type": "Mob",
+    "description": "End boyutunda yaşarlar ama bazen normal dünyadada spawn ola bilirler.Gözlerine baktiginda oyuncuya  saldirir",
+    "usage":"empty"
+  },
+  "warden": {
+    "name": "Warden",
+    "type": "Mob",
+    "description": "Yerin altinda antik şehirde spawn olur.Oyunun en güçlü düşman mob'u.",
+    "usage":"empty"
+  },
+   "spider": {
+    "name": "Spider",
+    "type": "Mob",
+    "description": "Gece ortaya çikan düşman mob.",
+    "usage":"empty"
+  },
+    "gold ingot": {
+    "name": "Gold Ingot",
+    "type": "Item",
+    "description": "Minecraft'in en değerli kaynaklarindan biri.",
+    "usage": "Zirh, kiliç ve zirh ve bir çok şey yapmak için kullanilir."
+  },
+      "emerald": {
+    "name": "Emerald",
+    "type": "Item",
+    "description": "Minecraft'in en değerli kaynaklarindan biri.",
+    "usage": "Köylülerle Ticaret yapmak için kullanilir."
+  },
+      "iron ingot": {
+    "name": "Iron Ingot",
+    "type": "Item",
+    "description": "Minecraft'in en değerli kaynaklarindan biri.",
+    "usage": "Zirh, kiliç ve bir çok şey yapmak için kullanilir."
+  },
+      "coal": {
+    "name": "Coal",
+    "type": "Item",
+    "description": "Minecraft'da diğer madenleri elde etmek için kullanilar temel kaynak.",
+    "usage": "Maden eritmek ve Yemek pişirmek için kullanilir"
+  },
+      "lapis lazuli": {
+    "name": "Lapis Lazuli",
+    "type": "Item",
+    "description": "Minecraft'da diğer madenleri elde etmek için kullanilar temel kaynak.",
+    "usage": "Büyü masasinda zirhlara ve altlere büyü basmak için kullanilir"
+  },
+      "redstone dust": {
+    "name": "Redstone Dust",
+    "type": "Item",
+    "description": "Minecraft'in en değerli kaynaklarindan biri.",
+    "usage": "Farmlarda ve ototmarik sistemlerde kullanilir."
+  },
+      "crafting table": {
+    "name": "Crafting Table",
+    "type": "Block",
+    "description": "MInecraft'in temel bloğu.",
+    "usage": "Yapilabilir herşeti craft etmemizi sağla."
+  },
+       "furnace": {
+    "name": "Furnace",
+    "type": "Block",
+    "description": "MInecraft'in temel bloklarindan biri.",
+    "usage": "Madenleri eritmek ve yemekleri pişirmek için kullanilir."
+  },
+       "blast furnace": {
+    "name": "Blast Furnace",
+    "type": "Block",
+    "description": "Minecraft'da sadece madenleri eritmek için kullanilan firin.",
+    "usage": "Madenleri daha hizli eritmemizi sağlar."
+  },
+         "smoker": {
+    "name": "Smoker",
+    "type": "Block",
+    "description": "Minecraft'da sadece yemekleri pişirmek için kullanilan firin.",
+    "usage": "Yemekleri daha hizli pişirmemizi sağlar."
+  },
+         "chest": {
+    "name": "Chest",
+    "type": "Block",
+    "description": "Eşyalari depolamak için kullanilir. Isterseniz tekli istersenizde iki sandigi birleştirip büyük sandik yapa bilirsiniz.",
+    "usage": "Eşyalari depolamamizi sağlar."
+  },
+         "ender chest": {
+    "name": "EnderChest",
+    "type": "Block",
+    "description": "Eşyalari depolamak için kullanilir. Normal sandiktan farki her oyuncu kendi eşyasini koya bilir ama diger oyuncunun eşyasini göremez.",
+    "usage": "Eşyalari depolamamizi sağlar."
+  },
+    "shulker": {
+    "name": "Shulker",
+    "type": "Mob",
+    "description": "End boyutunda End City de bulunurlar.Saldirdiklarinda oyuncuya uçma efekti verir",
+    "usage":"empty"
+  },
+          "shulker box": {
+    "name": "Shulker Box",
+    "type": "Block",
+    "description": "Shulker'lardan düşen shulker kapuklariyla yapilir.Eşyalari depolamak için kullanilir. Sandiklarin aksine kirdigimizda eşyalar içinde kalir ve bu sayede eşyalar kolayca taçinabilir.",
+    "usage": "Eşyalari depolamamizi ve başka biyere kolayca taşimamizi sağlar."
+  },
+      "ghast": {
+    "name": "Ghast",
+    "type": "Mob",
+    "description": "Nether boyutunda yaşar ve ateş topu firlatir",
+    "usage":"empty"
+  },
+       "ender dragon": {
+    "name": "Ender Dragon",
+    "type": "Mob",
+    "description": "End Boyutunun en güçlü yaratigidir. End City'e gitme portalini açmak için öldürmek lazimdir.Ejderhanin nefesini şişeyle alip iksir yapila bilir",
+    "usage":"empty"
+  },
+        "elytra": {
+    "name": "Elytra",
+    "type": "Item",
+    "description": "Minecraft'in en değerli eşyasdir.Sadece En City'de ki gemilerde bulunur",
+    "usage": "Havayi Fişek kullanarak Elytra ile istediginiz gibi uça bilirsiniz."
+  }
+      
+}
